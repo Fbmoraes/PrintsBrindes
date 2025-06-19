@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Relógios Personalizados - PrintsBrindes</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<style>
+    body { font-family: 'Open Sans', sans-serif; }
+    .font-brand { font-family: 'Fredoka One', cursive; }
+    .bg-brand-pink-light { background-color: #FFF0F5;}
+    .text-brand-pink-dark { color: #FF1493;}
+    .text-brand-yellow { color: #FFD700;}
+    .text-brand-blue { color: #1E90FF;}
+    .text-brand-green { color: #32CD32;}
+    .text-brand-purple { color: #9370DB;}
+    .border-brand-pink-dark { border-color: #FF1493; }
+    .hover-bg-brand-pink-dark:hover { background-color: #FF1493; }
+    .hover-text-white:hover { color: white; }
+    @media (max-width: 768px) {
+        .mobile-menu { display: none; }
+        .mobile-menu.open { display: block; }
+    }
+</style>
+</head>
+<body class="bg-brand-pink-light min-h-screen">
+<header class="py-6 shadow-md bg-white">
+<div class="container mx-auto px-6 flex justify-between items-center">
+    <div class="flex items-center">
+        <img alt="PrintsBrindes Logo" class="h-12 mr-4" src="/home/felipemoraes/Área de Trabalho/Cliente/WhatsApp Image 2025-06-19 at 09.48.27_preview_rev_1.png"/> 
+        <h1 class="font-brand text-3xl text-brand-pink-dark">PrintsBrindes</h1>
+    </div>
+    <nav class="space-x-6 hidden md:flex">
+        <a class="text-gray-700 hover:text-brand-pink-dark" href="index.html">Início</a>
+        <a class="text-gray-700 hover:text-brand-pink-dark" href="loja.html">Produtos</a>
+        <a class="text-gray-700 hover:text-brand-pink-dark" href="index.html#sobre">Sobre Nós</a>
+        <a class="text-gray-700 hover:text-brand-pink-dark" href="index.html#contato">Contato</a>
+        <a class="text-gray-700 hover:text-brand-pink-dark" href="#">
+            <span class="material-icons align-middle">shopping_cart</span>
+        </a>
+    </nav>
+    <button class="md:hidden flex items-center text-brand-pink-dark" onclick="toggleMobileMenu()">
+        <span class="material-icons text-3xl">menu</span>
+    </button>
+</div>
+<div id="mobile-menu" class="mobile-menu md:hidden bg-white shadow-md absolute w-full left-0 top-20 z-50">
+    <div class="flex flex-col items-center py-4 space-y-2">
+        <a class="text-gray-700 hover:text-brand-pink-dark" href="index.html">Início</a>
+        <a class="text-gray-700 hover:text-brand-pink-dark" href="loja.html">Produtos</a>
+        <a class="text-gray-700 hover:text-brand-pink-dark" href="index.html#sobre">Sobre Nós</a>
+        <a class="text-gray-700 hover:text-brand-pink-dark" href="index.html#contato">Contato</a>
+        <a class="text-gray-700 hover:text-brand-pink-dark" href="#">
+            <span class="material-icons align-middle">shopping_cart</span>
+        </a>
+    </div>
+</div>
+</header>
+<main class="container mx-auto px-4 py-8">
+<div class="bg-white p-6 md:p-8 rounded-xl shadow-lg">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div>
+<div class="aspect-square bg-gray-200 rounded-lg mb-4 flex items-center justify-center">
+    <img
+      id="main-image"
+      alt="Relógio Personalizado Stitch"
+      class="w-full h-full object-cover rounded-lg"
+      src="/home/felipemoraes/Área de Trabalho/Cliente/WhatsApp Image 2025-06-19 at 09.56.10.jpeg"
+    />
+</div>
+<div class="grid grid-cols-2 gap-2">
+    <img
+      id="thumb-image"
+      alt="Relógio Stitch"
+      class="w-20 h-20 object-cover rounded-md border-2 border-transparent hover:border-brand-pink-dark cursor-pointer transition duration-200"
+      src="/home/felipemoraes/Área de Trabalho/Cliente/WhatsApp Image 2025-06-19 at 09.56.00.jpeg"
+      onclick="swapImages()"
+    />
+</div>
+</div>
+<div>
+<h2 class="text-3xl font-bold text-brand-pink-dark mb-2">Relógios Personalizados</h2>
+<p class="text-gray-600 mb-4 text-sm">Lembrancinhas e embalagens exclusivas</p>
+<div class="mb-6">
+<span class="text-4xl font-bold text-brand-blue">R$ 9,90</span>
+</div>
+<p class="text-gray-700 mb-6 leading-relaxed">
+Relógios personalizados qualquer tema! <br><br>
+
+NÃO É PERMITIDO ESCOLHER COR DOS RELÓGIOS, ENVIAMOS CONFORME A DISPONIBILIDADE EM NOSSO ESTOQUE!<br><br>
+
+* Relógio de Pulso Digital na Caixa de
+Acetato<br>
+* Acompanha:<br>
+- 1 Relógio Digital (cores sortidas)<br>
+- 1 Caixa de Acetato Personalizada.<br>
+- Aplique na alça da caixa.<br>
+-fundo personalizado <br>
+-frente personalizado com nome<br>
+
+* Fazemos todos os temas/enviar nome e idade após a compra.<br>
+
+* Medidas:<br>
+- Altura: 9cm<br>
+- Largura: 6.50 cm<br>
+-total com alça 14cm<br>
+❤️Produção 7 dias</p>
+<div class="flex flex-col sm:flex-row gap-3">
+    <a
+      href="loja.html"
+      class="bg-brand-pink-dark text-black font-semibold py-3 px-8 rounded-lg shadow-md hover-bg-brand-pink-dark hover-text-white hover:shadow-lg transition duration-300 flex items-center justify-center gap-2 w-full sm:w-auto"
+    >
+      <span class="material-icons">arrow_back</span>
+      Voltar
+    </a>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="bg-gray-800 text-white py-10 mt-12">
+<div class="container mx-auto px-6 text-center">
+    <div class="mb-4">
+        <a class="text-gray-400 hover:text-white mx-2" href="#"><span class="material-icons text-2xl align-middle">facebook</span></a>
+        <a class="text-gray-400 hover:text-white mx-2" href="#"><span class="material-icons text-2xl align-middle">camera_alt</span></a> 
+        <a class="text-gray-400 hover:text-white mx-2" href="#"><span class="material-icons text-2xl align-middle">message</span></a> 
+    </div>
+    <p class="text-gray-400">© 2024 PrintsBrindes. Todos os direitos reservados.</p>
+    <p class="text-sm text-gray-500 mt-2">Feito com <span class="text-brand-pink-dark text-lg">♥</span> pela PrintsBrindes</p>
+</div>
+</footer>
+<script>
+function toggleMobileMenu() {
+    const menu = document.getElementById('mobile-menu');
+    menu.classList.toggle('open');
+}
+
+function changeQuantity(delta) {
+    const input = document.getElementById('quantity');
+    let value = parseInt(input.value) || 1;
+    value = Math.max(1, value + delta);
+    input.value = value;
+}
+
+function addProductToCart() {
+    const name = "Relógio Personalizado";
+    const price = 9.90;
+    const quantity = parseInt(document.getElementById('quantity').value) || 1;
+    const customText = document.getElementById('custom-text').value || "";
+    const color = "";
+
+    let cart;
+    try {
+        cart = JSON.parse(localStorage.getItem('cart')) || [];
+        if (!Array.isArray(cart)) cart = [];
+    } catch (e) {
+        cart = [];
+    }
+
+    const key = name + customText + color;
+    const existing = cart.find(item => item.key === key);
+    if (existing) {
+        existing.quantity += quantity;
+    } else {
+        cart.push({
+            key,
+            name,
+            price,
+            quantity,
+            customText,
+            color
+        });
+    }
+
+    localStorage.setItem('cart', JSON.stringify(cart));
+    window.location.replace("loja.html");
+}
+
+function swapImages() {
+    const mainImg = document.getElementById('main-image');
+    const thumbImg = document.getElementById('thumb-image');
+    const tempSrc = mainImg.src;
+    mainImg.src = thumbImg.src;
+    thumbImg.src = tempSrc;
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Detalhe do Produto - PrintsBrindes</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<style>
+    body {
+        font-family: 'Open Sans', sans-serif;
+    }
+    .font-brand {
+        font-family: 'Fredoka One', cursive;
+    }
+    .bg-brand-pink-light {
+        background-color: #FFF0F5;}
+    .text-brand-pink-dark {
+        color: #FF1493;}
+    .text-brand-yellow {
+        color: #FFD700;}
+    .text-brand-blue {
+        color: #1E90FF;}
+    .text-brand-green {
+        color: #32CD32;}
+    .text-brand-purple {
+        color: #9370DB;}
+    .border-brand-pink-dark {
+        border-color: #FF1493;
+    }
+    .hover-bg-brand-pink-dark:hover {
+        background-color: #FF1493;
+    }
+    .hover-text-white:hover {
+        color: white;
+    }
+    @media (max-width: 768px) {
+        .mobile-menu {
+            display: none;
+        }
+        .mobile-menu.open {
+            display: block;
+        }
+    }
+</style>
+</head>
+<body class="bg-brand-pink-light min-h-screen">
+<header class="py-6 shadow-md bg-white">
+<div class="container mx-auto px-6 flex justify-between items-center">
+    <div class="flex items-center">
+        <img alt="PrintsBrindes Logo" class="h-12 mr-4" src="/home/felipemoraes/Área de Trabalho/Cliente/WhatsApp Image 2025-06-19 at 09.48.27_preview_rev_1.png"/> 
+        <h1 class="font-brand text-3xl text-brand-pink-dark">PrintsBrindes</h1>
+    </div>
+    <nav class="space-x-6 hidden md:flex">
+  <a class="text-gray-700 hover:text-brand-pink-dark" href="Site.html">Início</a>
+  <a class="text-gray-700 hover:text-brand-pink-dark" href="loja.html">Produtos</a>
+  <a class="text-gray-700 hover:text-brand-pink-dark" href="Site.html#sobre">Sobre Nós</a>
+  <a class="text-gray-700 hover:text-brand-pink-dark" href="Site.html#contato">Contato</a>
+  <a class="text-gray-700 hover:text-brand-pink-dark" href="#">
+    <span class="material-icons align-middle">shopping_cart</span>
+  </a>
+</nav>
+    <!-- Botão menu mobile -->
+    <button class="md:hidden flex items-center text-brand-pink-dark" onclick="toggleMobileMenu()">
+        <span class="material-icons text-3xl">menu</span>
+    </button>
+</div>
+<!-- Menu mobile -->
+<div id="mobile-menu" class="mobile-menu md:hidden bg-white shadow-md absolute w-full left-0 top-20 z-50">
+  <div class="flex flex-col items-center py-4 space-y-2">
+    <a class="text-gray-700 hover:text-brand-pink-dark" href="Site.html">Início</a>
+    <a class="text-gray-700 hover:text-brand-pink-dark" href="loja.html">Produtos</a>
+    <a class="text-gray-700 hover:text-brand-pink-dark" href="Site.html#sobre">Sobre Nós</a>
+    <a class="text-gray-700 hover:text-brand-pink-dark" href="Site.html#contato">Contato</a>
+    <a class="text-gray-700 hover:text-brand-pink-dark" href="#">
+      <span class="material-icons align-middle">shopping_cart</span>
+    </a>
+  </div>
+</div>
+</header>
+<main class="container mx-auto px-4 py-8">
+<div class="bg-white p-6 md:p-8 rounded-xl shadow-lg">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div>
+<div class="aspect-square bg-gray-200 rounded-lg mb-4 flex items-center justify-center">
+<img alt="Imagem do Produto" class="w-full h-full object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkMrrgj1x38fP1xkWiHly9GAZ1nz45HJzZmRdTQcfKYxfL14NYCvujAn0T1NNwBXzFmxG66Ou0HpmubL-TTrR_H4rGjayN0nJR8tUzlIHTbM-EqPDPwstqQLDSAlJwKwZqAG_hfbMw2HzwAaZJIbiT-4EuaRklr5iQMo8e0vmXE7ox6fQXZb8Ozo_tcs_Ped3jozwaB0t_pZ5D_7TxZXP2z0wKVnauhHegu5QA5BNitEBPNhkS-AhNZLp4EgSZr56BfZfnUBOXlKZ3"/>
+</div>
+<div class="grid grid-cols-4 gap-2">
+<img alt="Miniatura do produto 1" class="w-full h-auto object-cover rounded-md cursor-pointer border-2 border-transparent hover:border-custom-pink-dark" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlF9TIclPZsKODmYa4WvzMBhAvEAdFkzyp1vxjGmHDODDrja8oz4WRvT20l7VgDJa-CaD2pJuYi8gTYAGpczp8u1y5lyr8fmusgxmlYwmn8cLjacaq0nt_gJsLi4rT6vGtYKCsoaa3H5Vgfp7UA9zSxUQ1Ql-m5l8XZB0VIJuCYUbTTfZumeyfvcNLa4je3Qtl9KZBewJQda0N1HA7lw4d-jG4tyTR2aLwOs9qVxxv1JohG0dT7SySNVLpLAmxTISIqwC_e1GbWnhH"/>
+<img alt="Miniatura do produto 2" class="w-full h-auto object-cover rounded-md cursor-pointer border-2 border-transparent hover:border-custom-pink-dark" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSbBOdnG6l8Ct4u-_JGDLh-7x4YcH9ED5HfwEVKpoexv48i5z471hPkO8lrtrL7gKLFiWGfy1S9ubMmBsOEZVabjwdjSrcN_cfG8dxr8WFQWTZJkOxLBTnPt9M_mh7WIY0s_LXQ7RF1b_h08buAsSEGv4JV0NgOjujbmPNi--fiKyQsIIeOvSBdC0Y3Z_KT-10E51bLXuWhH1a8SLNvScBIUheMdhunD76W_hu9ymR542AOEvov719Q6MZtWS20J1fl4ymbu6sQJxC"/>
+<img alt="Miniatura do produto 3" class="w-full h-auto object-cover rounded-md cursor-pointer border-2 border-transparent hover:border-custom-pink-dark" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAN3DON62yCVFkbwyOMnlr89W0OWJEt6DuXGOf3t_jcfYeA29fUu6gFxRIt4jnadYso7jocAHIBxCnYOF5SvzdCKbqe9PniXLwo7k-AmOghQ2yvVz91AcereLFBqsTC4CK9MEs8S6_mcSYVSX7082w22ujwGwkpZIIsfHdF_ltpgmKhP6cPkRyPoRQ1UnNR8rG0tyytoHJzrInq2oMP73-ojdmcKNILtZNWtb0d0mpfvIzN4P66CdVvu-Z3z1_XDYRIN1iGAKLu0C68"/>
+<img alt="Miniatura do produto 4" class="w-full h-auto object-cover rounded-md cursor-pointer border-2 border-transparent hover:border-custom-pink-dark" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZiqoeKaSymgZ7_3jrbImR0nQiyOgEmxX1NW9hx8kCAuRrROGy1ejB15qCJ8C2x17FRm7ZESACGkC9CiQX0Sp5uqJWsMiOFhK2BDLeKqaTWRSKL7Jr-_QlmYtBQlXzpxOpzYojGZBKrTXn13bVRXnTaImeQJOZql3fiu-3q_TKodDW9438vecWSnsyh3EmQAZIFMR3mcWxRPLzFbVzVjZtLLFMJeXo4kRmCXI1NKimICmv72yd67S_jmpc_FZ_1_-KgchUgaaDqnZI"/>
+</div>
+</div>
+<div>
+<h2 class="text-3xl font-bold text-custom-pink-dark mb-2">Nome do Produto Personalizado</h2>
+<p class="text-gray-600 mb-4 text-sm">Categoria do Produto</p>
+<div class="mb-6">
+<span class="text-4xl font-bold text-custom-blue">R$ 99,90</span>
+<span class="text-gray-500 line-through ml-2">R$ 120,00</span>
+</div>
+<p class="text-gray-700 mb-6 leading-relaxed">
+                        Descrição detalhada do produto. Aqui você pode falar sobre os materiais, dimensões, opções de personalização e tudo que for relevante para o cliente tomar a decisão de compra. Tente ser o mais completo possível.
+                    </p>
+<div class="mb-6">
+<h3 class="text-lg font-semibold text-gray-800 mb-2">Opções de Personalização:</h3>
+<div class="space-y-3">
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-1" for="custom-text">Texto para Personalizar:</label>
+<input class="w-full p-3 border border-gray-300 rounded-lg focus:ring-custom-pink-dark focus:border-custom-pink-dark" id="custom-text" name="custom-text" placeholder="Ex: Nome, Data Especial" type="text"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-1" for="color-option">Cor Principal:</label>
+<select class="w-full p-3 border border-gray-300 rounded-lg focus:ring-custom-pink-dark focus:border-custom-pink-dark bg-white" id="color-option" name="color-option">
+<option>Rosa</option>
+<option>Azul</option>
+<option>Amarelo</option>
+<option>Verde</option>
+</select>
+</div>
+</div>
+</div>
+<div class="flex items-center mb-6">
+<label class="mr-3 text-sm font-medium text-gray-700" for="quantity">Quantidade:</label>
+<div class="flex items-center border border-gray-300 rounded-lg">
+<button class="px-3 py-2 text-gray-600 hover:bg-gray-100 rounded-l-lg focus:outline-none">
+<span class="material-icons text-lg">remove</span>
+</button>
+<input class="w-12 text-center border-t border-b border-gray-200 focus:outline-none appearance-none" id="quantity-product1" min="1" type="number" value="1" onkeydown="return false;" style="-moz-appearance: textfield;" />
+<button class="px-3 py-2 text-gray-600 hover:bg-gray-100 rounded-r-lg focus:outline-none">
+<span class="material-icons text-lg">add</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row gap-3">
+<button
+  class="bg-brand-pink-dark text-black font-semibold py-3 px-8 rounded-lg shadow-md hover-bg-brand-pink-dark hover-text-white hover:shadow-lg transition duration-300 flex items-center justify-center gap-2 w-full sm:w-auto"
+  onclick="addProductToCart()"
+  type="button"
+>
+  <span class="material-icons">shopping_cart</span>
+  Adicionar ao Carrinho
+</button>
+<button class="bg-custom-yellow text-gray-800 w-full sm:w-auto font-semibold py-3 px-6 rounded-lg hover:bg-yellow-400 transition duration-300 flex items-center justify-center gap-2">
+<span class="material-icons">favorite_border</span>
+                            Lista de Desejos
+                        </button>
+</div>
+</div>
+</div>
+<div class="mt-12 pt-8 border-t border-gray-200">
+<h3 class="text-2xl font-bold text-custom-pink-dark mb-6 text-center">Você também pode gostar</h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
+<div class="aspect-square bg-gray-200 flex items-center justify-center">
+<img alt="Produto relacionado 1" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfYdXZDAttzMwzeZRaKNVoJUrk4vVxokaBX0eQ6VlRtTNFtVNKGFeG7jkaTa0VIfHRr3VtRVwQ7mnI5o2wnSBaFJIbmRpJoICWD9C8Fd3GmYTBIdPXlJSDCAnA-k2xEohUles91JDFT1LJ4lY58haWSsafycbVMszBg9h6Si_ApD69hCvddrwhxh5fETuKPv-0vt4k7jjZBXCk-CDHCvJ9WIa6rjC7vBE4xB7I6KMYPvF7pfR-sfzm2jjfg_s-L41X8brQJfNuvFIB"/>
+</div>
+<div class="p-4">
+<h4 class="font-semibold text-gray-800 truncate">Nome do Produto Similar</h4>
+<p class="text-custom-blue font-bold mt-1">R$ 49,90</p>
+<button class="bg-brand-pink-dark text-black font-semibold py-3 px-8 rounded-lg shadow-md hover-bg-brand-pink-dark hover-text-white hover:shadow-lg transition duration-300 flex items-center justify-center gap-2 w-full text-sm mt-3">
+  <span class="material-icons text-base">visibility</span>
+  Ver Detalhes
+</button>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
+<div class="aspect-square bg-gray-200 flex items-center justify-center">
+<img alt="Produto relacionado 2" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD38E0x4M870uC_tLJwO55UFD5-mfYIgPXtKtJQh9b9tdRusQATlSEs93ZRmg9948FBZsS_zBgVOwTGRSbMlN1LHJNwEZOIOvZhGgPAXIX6x24B2mo-ZFHKv6Fmt1R7RzOxiS0P4vDO03E76s0LDo4naqY0LdYDxwMbfk2XhyX3fgJSQy-Pu_-ITDIlU3GRlGmBwVaLDDmHz-5uG0fHENcEYH6xX9N0OdZDY0qh31Kq2f_gthlgQ2l8gfZfx50ODFqwxOll-HLX2k66"/>
+</div>
+<div class="p-4">
+<h4 class="font-semibold text-gray-800 truncate">Outro Item Interessante</h4>
+<p class="text-custom-blue font-bold mt-1">R$ 75,00</p>
+<button class="bg-brand-pink-dark text-black font-semibold py-3 px-8 rounded-lg shadow-md hover-bg-brand-pink-dark hover-text-white hover:shadow-lg transition duration-300 flex items-center justify-center gap-2 w-full text-sm mt-3">
+  <span class="material-icons text-base">visibility</span>
+  Ver Detalhes
+</button>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
+<div class="aspect-square bg-gray-200 flex items-center justify-center">
+<img alt="Produto relacionado 3" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSzPjJ6uNUMhINOBOY4QLxH-1Xza5WmxcyqecFQjN4yM8OYpMRd7fpftngB7eN2rO_FumBTkgejlfkF7HC_kEDDiqr-WjuUyvPzBvy3b7XCW-_RbZ_AY19FA_s8NKvn41urwkrJteeeRVcdW9BtNbZZoMw08BwooWNC-FWNJwlXueZhDUDZaN_xGr-_pMGeDGAf8Bm1O2kFeMy4uoa9pg_i2YOXEvu8nKd_qpy12UPH5XCa5ot_H8kK3-8Lpb_N_nbYZTKbBHJMRIy"/>
+</div>
+<div class="p-4">
+<h4 class="font-semibold text-gray-800 truncate">Mais uma Sugestão</h4>
+<p class="text-custom-blue font-bold mt-1">R$ 39,99</p>
+<button class="bg-brand-pink-dark text-black font-semibold py-3 px-8 rounded-lg shadow-md hover-bg-brand-pink-dark hover-text-white hover:shadow-lg transition duration-300 flex items-center justify-center gap-2 w-full text-sm mt-3">
+  <span class="material-icons text-base">visibility</span>
+  Ver Detalhes
+</button>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
+<div class="aspect-square bg-gray-200 flex items-center justify-center">
+<img alt="Produto relacionado 4" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTmfDax1snfZmedbmGdHlP1b0DFfIcrMf1-yGWHBZBX17--_VdCvNyKKQDHW7NVRsMKj0LFKkDhuA8gLJBruzUadPdyfxjFeNTwQfpRWEKdNq9x5iFpbZEF0rsUZcHwdgGtY1urkbSi-7ztfUP8ZrbcnZlkWDCEaEBWVTBxu79p7-ku_jKijF9tpTQHOhjqLUcrvpksoFSZWp6EFA75-KxrkWC-AMK-oGfLKK8f1bcFaM_5F-ZKjMyXeehcC-DHm6Ru6zaAIryGitp"/>
+</div>
+<div class="p-4">
+<h4 class="font-semibold text-gray-800 truncate">Opção Adicional</h4>
+<p class="text-custom-blue font-bold mt-1">R$ 55,50</p>
+<button class="bg-brand-pink-dark text-black font-semibold py-3 px-8 rounded-lg shadow-md hover-bg-brand-pink-dark hover-text-white hover:shadow-lg transition duration-300 flex items-center justify-center gap-2 w-full text-sm mt-3">
+  <span class="material-icons text-base">visibility</span>
+  Ver Detalhes
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="bg-gray-800 text-white py-10 mt-12">
+<div class="container mx-auto px-6 text-center">
+    <div class="mb-4">
+        <a class="text-gray-400 hover:text-white mx-2" href="#"><span class="material-icons text-2xl align-middle">facebook</span></a>
+        <a class="text-gray-400 hover:text-white mx-2" href="#"><span class="material-icons text-2xl align-middle">camera_alt</span></a> 
+        <a class="text-gray-400 hover:text-white mx-2" href="#"><span class="material-icons text-2xl align-middle">message</span></a> 
+    </div>
+    <p class="text-gray-400">© 2024 PrintsBrindes. Todos os direitos reservados.</p>
+    <p class="text-sm text-gray-500 mt-2">Feito com <span class="text-brand-pink-dark text-lg">♥</span> pela PrintsBrindes</p>
+</div>
+</footer>
+<script>
+function toggleMobileMenu() {
+    const menu = document.getElementById('mobile-menu');
+    menu.classList.toggle('open');
+}
+
+function addProductToCart() {
+  // Pegue as informações do produto
+  const name = "Caneca Personalizada";
+  const price = 25.00;
+  const quantity = parseInt(document.getElementById('quantity').value) || 1;
+
+  // Personalização (opcional)
+  const customText = document.getElementById('custom-text').value || "";
+  const color = document.getElementById('color-option').value || "";
+
+  // Carrega carrinho do localStorage ou inicia vazio
+  let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+  // Procura se já existe o mesmo produto (pode usar nome+personalização para ser único)
+  const key = name + customText + color;
+  const existing = cart.find(item => item.key === key);
+
+  if (existing) {
+    existing.quantity += quantity;
+  } else {
+    cart.push({
+      key,
+      name,
+      price,
+      quantity,
+      customText,
+      color
+    });
+  }
+
+  // Salva no localStorage
+  localStorage.setItem('cart', JSON.stringify(cart));
+  alert('Produto adicionado ao carrinho!');
+}
+</script>
+</body>
+</html>
